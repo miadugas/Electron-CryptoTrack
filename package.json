@@ -1,0 +1,20 @@
+{
+  "name": "Electron-CryptoTrack",
+  "version": "1.0.0",
+  "description": "Updates the current price of Bitcoin crypto currentcy through AXIOS call every 30 seconds.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miadugas/Electron-CryptoTrack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miadugas/Electron-CryptoTrack/issues"
+  },
+  "homepage": "https://github.com/miadugas/Electron-CryptoTrack#readme"
+}
