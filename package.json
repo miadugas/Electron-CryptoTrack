@@ -1,5 +1,5 @@
 {
-  "name": "Electron-CryptoTrack",
+  "name": "electron-cryptotrack",
   "version": "1.0.0",
   "description": "Updates the current price of Bitcoin crypto currentcy through AXIOS call every 30 seconds.",
   "main": "main.js",
