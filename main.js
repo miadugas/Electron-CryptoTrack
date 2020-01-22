@@ -1,5 +1,5 @@
 
-
+//
 // Electron QUICKSTART CODE
 // necessary variables for Electron
 const {app, BrowserWindow, Menu} = require('../Electron-CryptoTrack/src/node_modules/electron')

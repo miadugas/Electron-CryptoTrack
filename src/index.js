@@ -52,7 +52,7 @@ notifyBtn.addEventListener('click', function(event) {
     
        //grabs the add.html file
     const modalPath = path.join('file://', __dirname, 'add.html')
-
+//
     //builds our small window
     let win = new BrowserWindow({ frame: false, 
         
