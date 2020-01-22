@@ -1,6 +1,6 @@
 
 //electron required
-const electron = require('electron')
+const electron = require('./node_modules/electron')
 const path = require('path')
 const remote = electron.remote
 const ipc = electron.ipcRenderer

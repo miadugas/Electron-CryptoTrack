@@ -14,9 +14,9 @@ const notifyBtn = document.getElementById('notifyBtn')
 
 //updating ID's & tags in index.html
 var price = document.querySelector('h1')
-var targetPrice = document.getElementById('targetPrice')
 
 //Desktop notification
+var targetPrice = document.getElementById('targetPrice')
 var targetPriceVal
 
 const notification = {
@@ -35,7 +35,7 @@ function getBTC() {
             const cryptos = res.data.BTC.USD
             price.innerHTML = '$'+cryptos.toLocaleString('en')
 
-              //The noticiation function
+            //The noticiation function
             if (targetPrice.innerHTML != '' && targetPriceVal < res.data.BTC.USD) {
                 const myNotification = new window.Notification(notification.title, notification)
             }
@@ -50,19 +50,17 @@ setInterval(getBTC, 10000);
 //Notify button event listener
 notifyBtn.addEventListener('click', function(event) {
     
-     //grabs the add.html file
+       //grabs the add.html file
     const modalPath = path.join('file://', __dirname, 'add.html')
 
     //builds our small window
     let win = new BrowserWindow({ frame: false, 
         
-    //make the small window transparent & always on top 
-        transparent: true, alwaysOnTop: true, 
-        
+        //make the small window transparent & always on //top 
         //smaller window size
-        width: 400, height: 200})
+        transparent: true, alwaysOnTop: true, width: 400, height: 200})
     
-    //cleanup files
+        //cleanup files
     win.on('close', function() { win = null })
     win.loadURL(modalPath)
     win.show()
